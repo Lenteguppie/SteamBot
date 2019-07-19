@@ -1,0 +1,80 @@
+{
+    "CSGO" : {
+        "Weapons" : {
+            "NOVA" : "nova", 
+            "XM1014" : "xm1014", 
+            "MAG-7" : "mag7", 
+            "SAWED-OFF" : "sawedoff", 
+            "M249" : "m249", 
+            "NEGEV" : "negev",
+            "MP5-SD": {"statName": "UA"},
+            "P90" : {
+                "statName": "p90",
+                "image" : "https://vignette.wikia.nocookie.net/cswikia/images/5/54/CSGO_P90_Inventory.png/revision/latest/scale-to-width-down/250?cb=20130813201421"
+                },
+            "UMP-45" : {
+                "statName": "ump45",
+                "ID" :  "24",
+                "stats": {
+                    "kills": "0", 
+                    "hits": "0", 
+                    "shots": "0"
+                    }
+                },
+            "MP7": {
+                "statName": "mp7",
+                "stats": {
+                    "kills": "0", 
+                    "hits": "0", 
+                    "shots": "0"
+                    }
+                },
+            "PP-Bizon": {                 
+                "statName": "bizon",
+                "stats": {
+                    "kills": "0", 
+                    "hits": "0", 
+                    "shots": "0"
+                    }
+                }, 
+            "MAC-10" :{                 
+                "statName": "mac10",
+                "stats": {
+                    "kills": "0", 
+                    "hits": "0", 
+                    "shots": "0"
+                    }
+                },  
+            "MP9":{                 
+                "statName": "mp9",
+                "stats": {
+                    "kills": "0", 
+                    "hits": "0", 
+                    "shots": "0"
+                    }
+                },
+    
+            "AWP" : "awp", 
+            "SCAR-20" : "scar20", 
+            "G3SG1" : "g3sg1", 
+            "SSG 08" : "ssg08", 
+            "SG 553" : "sg556", 
+            "AUG" : "aug", 
+            "AK-47" : "ak47", 
+            "M4A1-S" : "m4a1", 
+            "M4A4" : "", 
+            "GALIL AR" : "galilar", 
+            "FAMAS" : "famas",       
+            "Desert Eagle" : "deagle", 
+            "Dual Berettas": "elite", 
+            "CZ75-Auto": "", 
+            "Tec-9" : "", 
+            "Five-SeveN" : "", 
+            "P250" : "", 
+            "Glock-18" : "", 
+            "USP-S" : "", 
+            "P2000" : ""
+        }
+    }
+  
+}
