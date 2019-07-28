@@ -8,11 +8,12 @@ from os import listdir
 from os.path import isfile, join
 
 import sys, traceback
-TOKEN = '[OWN BOT TOKEN]'
+TOKEN = '[YOUR DISCORD API TOKEN]'
+version = "1.0.1"
 
-startup_extentions = ["cogs.Music", "cogs.CSGOData", "cogs.SteamBridge", "cogs.admin"]
+startup_extentions = ["cogs.CSGOData", "cogs.SteamBridge", "cogs.admin", "cogs.Other"]
 
-bot = commands.Bot("/")
+bot = commands.Bot(".")
 
 @bot.event
 async def on_ready():
@@ -21,34 +22,8 @@ async def on_ready():
     print('as user: ')
     print(bot.user.id)
     print('------')
-    activity = discord.Game(name="/help")
+    activity = discord.Game(name=".help")
     await bot.change_presence(activity=activity)
-
-class Main_Commands():
-    def __init__(self, bot):
-        self.bot = bot
-
-@bot.command(pass_context = True)
-async def stat(ctx):
-    await ctx.channel.send('Your stats arent ready yet {0.author.mention}!'.format(ctx))
-
-@bot.command(name="quit")
-async def quit_(ctx):
-   
-    try:
-        await ctx.send('We did it boys, bot is no more!')
-        print("Bot shutting down!")
-        sys.exit()
-    except Exception as e:
-        print (e)
-
-@bot.command(pass_context = True)
-async def hello(ctx):
-    await ctx.channel.send('Hi :wave:')
-
-@bot.command(pass_context = True)
-async def ping(ctx):
-    await ctx.channel.send('Pong!')
 
 cogs_dir = "cogs"
 
@@ -60,6 +35,5 @@ if __name__ == '__main__':
         except (discord.ClientException, ModuleNotFoundError):
             print(f'Failed to load extension {extension}.')
             traceback.print_exc()
-
 
 bot.run(TOKEN)

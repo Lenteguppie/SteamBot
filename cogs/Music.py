@@ -159,7 +159,7 @@ class MusicPlayer:
             self._guild.voice_client.play(source, after=lambda _: self.bot.loop.call_soon_threadsafe(self.next.set))
             self.np = await self._channel.send(f'**Now Playing:** `{source.title}` requested by '
                                                f'`{source.requester}`')
-            activity = discord.Game(name=source.title)
+            activity = discord.Activity(type=discord.ActivityType.listening, name=source.title)
             await self.bot.change_presence(status=discord.Status.idle, activity=activity)
             await self.next.wait()
 
@@ -170,6 +170,8 @@ class MusicPlayer:
             try:
                 # We are no longer playing this song...
                 await self.np.delete()
+                activity = discord.Game(name=".help")
+                await self.bot.change_presence(status=discord.Status.idle, activity=activity)
             except discord.HTTPException:
                 pass
 

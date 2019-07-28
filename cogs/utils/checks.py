@@ -22,6 +22,7 @@ def isOwner():
         if is_owner:
             return True
         else:
+            await ctx.send(f"{ctx.author.mention} You need to be the server owner to use this command!", delete_after=20)
             return False
     
     return commands.check(pred)
