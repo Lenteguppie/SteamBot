@@ -8,10 +8,10 @@ from os import listdir
 from os.path import isfile, join
 
 import sys, traceback
-TOKEN = '[YOUR DISCORD API TOKEN]'
+TOKEN = 'NDYwNDcwNjc0Njk2MTc1NjE2.XSXz9Q.JHq3T3DFyfP7f2_WSsJBwU_z5Yc'
 version = "1.0.1"
 
-startup_extentions = ["cogs.CSGOData", "cogs.SteamBridge", "cogs.admin", "cogs.Other"]
+startup_extentions = ["cogs.CSGOData", "cogs.SteamBridge", "cogs.admin", "cogs.Other", "cogs.PUBG"]
 
 bot = commands.Bot(".")
 

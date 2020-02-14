@@ -151,6 +151,12 @@
                 "ID" :  "1",
                 "image" : "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapons/base_weapons/weapon_deagle.29e8f0d7d0be5e737d4f663ee8b394b5c9e00bdd.png"
                 },
+            "DEAGLE" : {
+                "statName": "deagle",
+                "OfficialName" : "Desert Eagle and R8 Revolver",
+                "ID" :  "1",
+                "image" : "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/weapons/base_weapons/weapon_deagle.29e8f0d7d0be5e737d4f663ee8b394b5c9e00bdd.png"
+                },
             "R8 REVOLVER" : {
                 "statName": "deagle",
                 "OfficialName" : "Desert Eagle and R8 Revolver",
